@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben's 50 States</title>
+    <link rel ="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/flag.png">
+    <link rel="stylesheet" href="https://use.typekit.net/kvj2fwy.css">
+</head>
+<body>
+    <!-- Hamburger menu funciontalities -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+        
+        hamburger.addEventListener('click', () => {
+          menu.classList.toggle('show');
+        });
+    </script>
+
+    <!-- Header setup -->
+    <header>
+        <img class = "logo" src="images/eagle.jpg" alt="logo">
+        <div class="title"><h2>-- Welcome to the 50 States --</h2></div>
+    </header>
+    <nav>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+          </svg>Home</a></li>
+          <li><a href="quiz.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+          </svg>Quiz</a></li>
+        </ul>
+      </nav>
+      
+      <div id="container">
+
+        <img class = "map" src="images/logo.jpg" alt="map">
+
+        <!-- Adding the states and the abbreviations for each state 
+        Putting all of the elements in classes for easy editing -->
+        
+        <div class="content">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/bama.webp" alt="AL">
+                </div>
+                <h2>Alabama</h2>
+                <p>Abbreviation: AL</p>
+                <p><a href = "pages/bama.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/alaska.gif" alt="AK">
+                </div>
+                <h2>Alaska</h2>
+                <p>Abbreviation: AK</p>
+                <p><a href = "pages/alaska.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/zona.gif" alt="AZ">
+                </div>
+                <h2>Arizona</h2>
+                <p>Abbreviation: AZ</p>
+                <p><a href = "pages/zona.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/arkansas.webp" alt="AR">
+                </div>
+                <h2>Arkansas</h2>
+                <p>Abbreviation: AR</p>
+                <p><a href = "pages/arkansas.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/cali.webp" alt="CA">
+                </div>
+                <h2>California</h2>
+                <p>Abbreviation: CA</p>
+                <p><a href = "pages/cali.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/rado.webp" alt="CO">
+                </div>
+                <h2>Colorado</h2>
+                <p>Abbreviation: CO</p>
+                <p><a href = "pages/colorado.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/conn.webp" alt="CT">
+                </div>
+                <h2>Connecticut</h2>
+                <p>Abbreviation: CT</p>
+                <p><a href = "pages/connecticut.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/delaware.webp" alt="DE">
+                </div>
+                <h2>Delaware</h2>
+                <p>Abbreviation: DE</p>
+                <p><a href = "pages/delaware.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/florida.gif" alt="FL">
+                </div>
+                <h2>Florida</h2>
+                <p>Abbreviation: FL</p>
+                <p><a href = "pages/florida.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/georg.webp" alt="GA">
+                </div>
+                <h2>Georgia</h2>
+                <p>Abbreviation: GA</p>
+                <p><a href = "pages/georgia.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/hawaii.webp" alt="HI">
+                </div>
+                <h2>Hawaii</h2>
+                <p>Abbreviation: HI</p>
+                <p><a href = "pages/hawaii.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/idaho.webp" alt="ID">
+                </div>
+                <h2>Idaho</h2>
+                <p>Abbreviation: ID</p>
+                <p><a href = "pages/idaho.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/illi.webp" alt="IL">
+                </div>
+                <h2>Illinois</h2>
+                <p>Abbreviation: IL</p>
+                <p><a href = "pages/illinois.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/indiana.gif" alt="IN">
+                </div>
+                <h2>Indiana</h2>
+                <p>Abbreviation: IN</p>
+                <p><a href = "pages/indiana.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/iowa.webp" alt="IA">
+                </div>
+                <h2>Iowa</h2>
+                <p>Abbreviation: IA</p>
+                <p><a href = "pages/iowa.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/kansas.gif" alt="KS">
+                </div>
+                <h2>Kansas</h2>
+                <p>Abbreviation: KS</p>
+                <p><a href = "pages/kansas.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/kentucky.gif" alt="KY">
+                </div>
+                <h2>Kentucky</h2>
+                <p>Abbreviation: KY</p>
+                <p><a href = "pages/kentucky.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/loui.gif" alt="LA">
+                </div>
+                <h2>Louisiana</h2>
+                <p>Abbreviation: LA</p>
+                <p><a href = "pages/lousiana.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/maine.webp" alt="ME">
+                </div>
+                <h2>Maine</h2>
+                <p>Abbreviation: ME</p>
+                <p><a href = "pages/maine.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/mary.webp" alt="MD">
+                </div>
+                <h2>Maryland</h2>
+                <p>Abbreviation: MD</p>
+                <p><a href = "pages/maryland.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/mass.gif" alt="MA">
+                </div>
+                <h2>Massachusetts</h2>
+                <p>Abbreviation: MA</p>
+                <p><a href = "pages/massachusetts.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/michi.gif" alt="MI">
+                </div>
+                <h2>Michigan</h2>
+                <p>Abbreviation: MI</p>
+                <p><a href = "pages/michigan.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/minne.webp" alt="MN">
+                </div>
+                <h2>Minnesota</h2>
+                <p>Abbreviation: MN</p>
+                <p><a href = "pages/minnesota.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/mississ.webp" alt="MS">
+                </div>
+                <h2>Mississippi</h2>
+                <p>Abbreviation: MS</p>
+                <p><a href = "pages/mississippi.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/ouri.gif" alt="MO">
+                </div>
+                <h2>Missouri</h2>
+                <p>Abbreviation: MO</p>
+                <p><a href = "pages/missouri.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/mon.gif" alt="MT">
+                </div>
+                <h2>Montana</h2>
+                <p>Abbreviation: MT</p>
+                <p><a href = "pages/montana.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/nebra.gif" alt="NE">
+                </div>
+                <h2>Nebraska</h2>
+                <p>Abbreviation: NE</p>
+                <p><a href = "pages/nebraska.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/nev.gif" alt="NV">
+                </div>
+                <h2>Nevada</h2>
+                <p>Abbreviation: NV</p>
+                <p><a href = "pages/nevada.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/NewH.gif" alt="NH">
+                </div>
+                <h2>New Hampshire</h2>
+                <p>Abbreviation: NH</p>
+                <p><a href = "pages/newhamp.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/NewJ.gif" alt="NJ">
+                </div>
+                <h2>New Jersey</h2>
+                <p>Abbreviation: NJ</p>
+                <p><a href = "pages/newjers.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/NewM.gif" alt="NM">
+                </div>
+                <h2>New Mexico</h2>
+                <p>Abbreviation: NM</p>
+                <p><a href = "pages/newmexi.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/NewY.webp" alt="NY">
+                </div>
+                <h2>New York</h2>
+                <p>Abbreviation: NY</p>
+                <p><a href = "pages/newyork.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/NoC.gif" alt="NC">
+                </div>
+                <h2>North Carolina</h2>
+                <p>Abbreviation: NC</p>
+                <p><a href = "pages/northcar.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/NoD.gif" alt="ND">
+                </div>
+                <h2>North Dakota</h2>
+                <p>Abbreviation: ND</p>
+                <p><a href = "pages/northda.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/Ohio.gif" alt="OH">
+                </div>
+                <h2>Ohio</h2>
+                <p>Abbreviation: OH</p>
+                <p><a href = "pages/ohio.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/okla.gif" alt="OK">
+                </div>
+                <h2>Oklahoma</h2>
+                <p>Abbreviation: OK</p>
+                <p><a href = "pages/oklahoma.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/oreg.gif" alt="OR">
+                </div>
+                <h2>Oregon</h2>
+                <p>Abbreviation: OR</p>
+                <p><a href = "pages/oregon.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/penn.gif" alt="PA">
+                </div>
+                <h2>Pennsylvania</h2>
+                <p>Abbreviation: PA</p>
+                <p><a href = "pages/pennsyl.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/RhoI.webp" alt="RI">
+                </div>
+                <h2>Rhode Island</h2>
+                <p>Abbreviation: RI</p>
+                <p><a href = "pages/rhode.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/SoC.gif" alt="SC">
+                </div>
+                <h2>South Carolina</h2>
+                <p>Abbreviation: SC</p>
+                <p><a href = "pages/southcaro.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/SoD.gif" alt="SD">
+                </div>
+                <h2>South Dakota</h2>
+                <p>Abbreviation: SD</p>
+                <p><a href = "pages/southda.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/tenn.gif" alt="TN">
+                </div>
+                <h2>Tennessee</h2>
+                <p>Abbreviation: TN</p>
+                <p><a href = "pages/tennessee.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/texas.webp" alt="TX">
+                </div>
+                <h2>Texas</h2>
+                <p>Abbreviation: TX</p>
+                <p><a href = "pages/texas.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/Utah.gif" alt="UT">
+                </div>
+                <h2>Utah</h2>
+                <p>Abbreviation: UT</p>
+                <p><a href = "pages/utah.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/verm.gif" alt="VT">
+                </div>
+                <h2>Vermont</h2>
+                <p>Abbreviation: VT</p>
+                <p><a href = "pages/vermont.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/virg.gif" alt="VA">
+                </div>
+                <h2>Virginia</h2>
+                <p>Abbreviation: VA</p>
+                <p><a href = "pages/virginia.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/wash.gif" alt="WA">
+                </div>
+                <h2>Washington</h2>
+                <p>Abbreviation: WA</p>
+                <p><a href = "pages/washington.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/westV.gif" alt="WV">
+                </div>
+                <h2>West Virginia</h2>
+                <p>Abbreviation: WV</p>
+                <p><a href = "pages/westvir.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/wiscon.gif" alt="WI">
+                </div>
+                <h2>Wisconsin</h2>
+                <p>Abbreviation: WI</p>
+                <p><a href = "pages/wisconsin.html">more ></a></p>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/wyom.gif" alt="WY">
+                </div>
+                <h2>Wyoming</h2>
+                <p>Abbreviation: WY</p>
+                <p><a href = "pages/wyoming.html">more ></a></p>
+            </div>
+        </div>
+      </div>
+
+    <!-- Addition of the footer -->
+    <footer>
+        <h4> &copy; Copyright -- Benjamin's States</h4>
+        <ul class="footer_links">
+       <li><a  href="#"><i class="fa-brands fa-facebook-f" style="color: white;"></i></a></li>
+       <li><a  href="#"><i class="fa-brands fa-twitter" style="color: white;"></i></a></li>
+       <li><a  href="#"><i class="fa-brands fa-pinterest" style="color: white;"></i></a></li>
+        </ul>
+      </footer> 
+</body>
+</html>

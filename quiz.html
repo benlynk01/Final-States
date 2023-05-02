@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben's 50 States</title>
+    <link rel ="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/images/flag.png">
+    <link rel="stylesheet" href="https://use.typekit.net/kvj2fwy.css">
+</head>
+<body>
+
+    <!-- Hamburger menu funciontalities -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+        
+        hamburger.addEventListener('click', () => {
+          menu.classList.toggle('show');
+        });
+    </script>
+    
+    <!-- Header that includes favicon, hamburger menu and links -->
+    <header>
+        <img class = "logo" src="images/eagle.jpg" alt="logo">
+        <div class="title"><h2>-- Welcome to the 50 States --</h2></div>
+    </header>
+    <nav>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+              </svg>Home</a></li>
+              <li><a href="quiz.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+              </svg>Quiz</a></li>
+        </ul>
+      </nav>
+
+
+      <!-- Quiz has been entered below with 10 questions -->
+<form>
+    <h2>Question 1</h2>
+    <p>What is the capital of California?</p>
+    <label>
+      <input type="radio" name="q1" value="a" />
+      a) Quebec
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q1" value="b" />
+      b) Chaleston
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q1" value="c" />
+      c) Sacramento 
+    </label>
+    <br /><br />
+    
+    <h2>Question 2</h2>
+    <p>Are there more than 1 million people in North Dakota?</p>
+    <label>
+      <input type="radio" name="q2" value="a" />
+      a) Yes
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q2" value="b" />
+      b) No
+    </label>
+    <br /><br />
+    
+    <h2>Question 3</h2>
+    <p>What is the biggest state in the United States?</p>
+    <label>
+      <input type="radio" name="q3" value="a" />
+      a) Texas
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q3" value="b" />
+      b) Alaska
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q3" value="c" />
+      c) California
+    </label>
+    <br /><br />
+
+    <h2>Question 4</h2>
+    <p>What is the smallest state in the United States?</p>
+    <label>
+      <input type="radio" name="q4" value="a" />
+      a) Washington 
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q4" value="b" />
+      b) Rhode Island
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q4" value="c" />
+      c) Delaware
+    </label>
+    <br /><br />
+
+    <h2>Question 5</h2>
+    <p>Which of the following is NOT a major industry in Indiana?</p>
+    <label>
+      <input type="radio" name="q5" value="a" />
+      a) Paper and printing
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q5" value="b" />
+      b) Electronic Equipment
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q5" value="c" />
+      c) Steel
+    </label>
+    <br /><br />
+
+    <h2>Question 6</h2>
+    <p>Which state is abbreviated "AZ"?</p>
+    <label>
+      <input type="radio" name="q6" value="a" />
+      a) Alaska
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q6" value="b" />
+      b) Arizona
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q6" value="c" />
+      c) Arkansas
+    </label>
+    <br /><br />
+
+    <h2>Question 7</h2>
+    <p>What state is the Statue of Liberty in?</p>
+    <label>
+      <input type="radio" name="q7" value="a" />
+      a) Rhode Island
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q7" value="b" />
+      b) New Hampshire
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q7" value="c" />
+      c) New York
+    </label>
+    <br /><br />
+
+    <h2>Question 8</h2>
+    <p>Which state has the highest population?</p>
+    <label>
+      <input type="radio" name="q8" value="a" />
+      a) Texas
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q8" value="b" />
+      b) California
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q8" value="c" />
+      c) Florida
+    </label>
+    <br /><br />
+
+    <h2>Question 9</h2>
+    <p>What state has the smallest population?</p>
+    <label>
+      <input type="radio" name="q9" value="a" />
+      a) Wyoming
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q9" value="b" />
+      b) Vermont
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q9" value="c" />
+      c) Alaska
+    </label>
+    <br /><br />
+
+    <h2>Question 10</h2>
+    <p>Whhich state is Mount Rushmore National Memorial in?</p>
+    <label>
+      <input type="radio" name="q10" value="a" />
+      a) Nevada
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q10" value="b" />
+      b) North Dakota
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="q10" value="c" />
+      c) South Dakota
+    </label>
+    <br /><br />
+    
+    <input class="btn btn-primary" type="submit" value="Submit" onclick="showGradingAlert()"/>
+</form>
+
+<!-- Adding of an alert for when the student submits the quiz -->
+    <script>
+    function showGradingAlert() {
+      alert("Quiz is being graded. Please wait for the results.");
+    }
+    </script>
+    
+
+    <!-- Addition of the footer -->
+  <footer>
+    <h4> &copy; Copyright -- Benjamin's States</h4>
+    <ul class="footer_links">
+   <li><a  href="#"><i class="fa-brands fa-facebook-f" style="color: white;"></i></a></li>
+   <li><a  href="#"><i class="fa-brands fa-twitter" style="color: white;"></i></a></li>
+   <li><a  href="#"><i class="fa-brands fa-pinterest" style="color: white;"></i></a></li>
+    </ul>
+  </footer> 
+</body>
+</html>
