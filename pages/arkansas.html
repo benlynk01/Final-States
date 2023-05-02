@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben's 50 States</title>
+    <link rel ="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/flag.png">
+    <link rel="stylesheet" href="https://use.typekit.net/kvj2fwy.css">
+    <link
+    rel="stylesheet/less"
+    type="text/css"
+    href="less/styles.less"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</head>
+<body>
+  <!-- Hamburger menu funciontalities -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+    
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+
+  <!--Header setup-->
+    <header>
+        <div class="title"><h2>-- Welcome to Arkansas --</h2></div>
+        <nav>
+            <div class="hamburger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <ul class="menu">
+              <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+              </svg>Home</a></li>
+              <li><a href="quiz.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+              </svg>Quiz</a></li>
+            </ul>
+          </nav>
+    </header>
+    <div class = "main">
+        <div class="heading">
+            <h1>Arkansas</h1>
+            <h4>Abbreviation: AR</h4>
+        </div>
+        <!-- Addition of the facts for the state-->
+        <div class = "facts">
+            <h2>Land Mass: 52,075 sq.mi.</h2>
+            <br>
+            <h2>Capital City: Little Rock</h2>
+            <br>
+            <h2>Major Industry: Food processing, electric equipment, and fabricated metal products</h2>
+            <br>
+            <h2>Tourist Attraction: Hot Springs National Park</h2>
+            <br>
+            <h2>Population: 3.026 million</h2>
+        </div>
+    <!--Footer setup-->
+    <footer>
+        <h4> &copy; Copyright -- Benjamin's States</h4>
+        <ul class="footer_links">
+       <li><a  href="#"><i class="fa-brands fa-facebook-f" style="color: white;"></i></a></li>
+       <li><a  href="#"><i class="fa-brands fa-twitter" style="color: white;"></i></a></li>
+       <li><a  href="#"><i class="fa-brands fa-pinterest" style="color: white;"></i></a></li>
+        </ul>
+    </footer> 
+</body>
+</html>
